@@ -7,19 +7,19 @@ class Employee {
     }
 
     getName(){
-
+        return "Alice";
     }
 
     getId(){
-
+        return 100;
     }
 
     getEmail(){
-
+        return "test@test.com";
     }
 
     getRole(){
-
+        return "Employee";
     }
 }
 
