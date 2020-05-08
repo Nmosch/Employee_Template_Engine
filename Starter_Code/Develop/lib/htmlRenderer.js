@@ -5,7 +5,7 @@ const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
   const html = [];
-
+//filters global array to each individual role and renders html
   html.push(employees
     .filter(employee => employee.getRole() === "Manager")
     .map(manager => renderManager(manager))
@@ -23,6 +23,7 @@ const render = employees => {
 
 };
 
+//functions to render html based on class
 const renderManager = manager => {
   let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
   template = replacePlaceholders(template, "name", manager.getName());
@@ -42,6 +43,7 @@ const renderEngineer = engineer => {
   template = replacePlaceholders(template, "github", engineer.getGithub());
   return template;
 };
+
 
 const renderIntern = intern => {
   let template = fs.readFileSync(path.resolve(templatesDir, "intern.html"), "utf8");
