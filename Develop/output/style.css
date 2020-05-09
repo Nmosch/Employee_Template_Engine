@@ -1,0 +1,22 @@
+.jumbotron {
+    background-color: lightblue;
+
+}
+
+.card-header {
+    background-color: lightcoral;
+    border-color: black;
+}
+
+.card-body {
+    background-color: lightblue;
+    border-color: black;
+}
+
+.list-group-item{
+    border-color: black;
+}
+
+.employee-card{
+    border-color: black;
+}
